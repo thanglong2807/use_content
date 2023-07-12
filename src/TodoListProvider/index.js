@@ -49,6 +49,7 @@ const TodoListProvider = ({ children }) => {
         }
     }
     const handleDuplicate = (data) => {
+        console.log(data);
         setListStudent([...listStudent, { ...data, id: uuidv4(), username: `(bản sao) ${data.username}` }])
     }
     const value = {
